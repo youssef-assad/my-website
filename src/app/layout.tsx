@@ -25,6 +25,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Youssef Assad — Web Dev & AI Integrator",
     description: "Web Dev & AI Integrator. Selected work and contact.",
+    images: [{ url: "/og.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Youssef Assad — Web Dev & AI Integrator",
+    description: "Web Dev & AI Integrator. Selected work and contact.",
     images: ["/og.png"],
   },
 };

@@ -18,6 +18,12 @@ const CURRENTLY = [
   "Open to interesting problems",
 ];
 
+const STATS = [
+  { value: "11.6×", label: "Translation throughput under load" },
+  { value: "24", label: "Languages in the translation API" },
+  { value: "4", label: "TTS engines in one voice studio" },
+];
+
 export function About() {
   const sectionRef = useRef<HTMLElement | null>(null);
   const reduced = useReducedMotion();
@@ -122,6 +128,19 @@ export function About() {
           </ul>
         </aside>
       </div>
+
+      <dl className="about-body mx-auto mt-20 grid w-full max-w-6xl grid-cols-3 gap-6 border-t border-white/10 pt-10 will-change-transform md:mt-28">
+        {STATS.map((stat) => (
+          <div key={stat.label} className="flex flex-col-reverse justify-end">
+            <dt className="mt-2 text-[10px] uppercase leading-relaxed tracking-[0.2em] text-foreground/50 md:text-xs">
+              {stat.label}
+            </dt>
+            <dd className="font-display text-4xl font-medium tracking-tight md:text-6xl">
+              {stat.value}
+            </dd>
+          </div>
+        ))}
+      </dl>
     </section>
   );
 }
