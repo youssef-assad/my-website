@@ -148,6 +148,8 @@ export function Hero() {
           ref={videoRef}
           className="aspect-[3/4] w-[220px] object-cover sm:w-[260px] md:w-[360px] lg:w-[420px] xl:w-[480px] will-change-transform"
           src="/hero-bg.mp4"
+          poster="/hero-bg-poster.jpg"
+          preload="auto"
           autoPlay
           loop
           muted
